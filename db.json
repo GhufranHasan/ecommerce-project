@@ -5,6 +5,30 @@
       "email": "ghufran@ecommerce.com",
       "password": "Ghufran@123",
       "id": 1
+    },
+    {
+      "name": "Test",
+      "password": "test@123",
+      "email": "test@test.com",
+      "id": 2
+    },
+    {
+      "name": "Admin",
+      "password": "admin@123",
+      "email": "admin@o3interfaces.com",
+      "id": 3
+    },
+    {
+      "name": "alena",
+      "password": "abc@123",
+      "email": "alena@test.com",
+      "id": 4
+    },
+    {
+      "name": "User",
+      "password": "user@123",
+      "email": "user@test.com",
+      "id": 5
     }
   ]
 }
