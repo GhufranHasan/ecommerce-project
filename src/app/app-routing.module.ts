@@ -11,11 +11,7 @@ const routes: Routes = [
   {
     path: 'seller-auth',
     component: SellerAuthComponent
-  },
-  {
-    path: 'login',
-    // component: 
-  },
+  }
 ];
 
 @NgModule({
