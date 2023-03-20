@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class SellerAuthComponent implements OnInit {
 
   constructor(private seller: SellerService, private router: Router) { }
+  showLogin = false
 
   ngOnInit(): void {
     this.seller.reloadSeller()
@@ -18,5 +19,17 @@ export class SellerAuthComponent implements OnInit {
 
   signup(data: SignUp): void {
     this.seller.userSignUp(data)
+  }
+
+  login(data: SignUp): void {
+    console.warn(data)
+  }
+
+  openLogin(){
+    this.showLogin = true
+  }
+
+  openSignUp(){
+    this.showLogin = false
   }
 }
