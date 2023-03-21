@@ -1,4 +1,4 @@
-import { SignUp } from './../data-type';
+import { Login, SignUp } from './../data-type';
 import { SellerService } from './../services/seller.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -18,11 +18,13 @@ export class SellerAuthComponent implements OnInit {
   }
 
   signup(data: SignUp): void {
+    console.warn(data)
     this.seller.userSignUp(data)
   }
 
-  login(data: SignUp): void {
-    console.warn(data)
+  login(data: Login): void {
+    // console.warn(data)
+    this.seller.userLogin(data)
   }
 
   openLogin(){
